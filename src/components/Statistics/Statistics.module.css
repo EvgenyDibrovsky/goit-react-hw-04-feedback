@@ -1,0 +1,22 @@
+.feedbackList {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.feedbackListItem {
+  display: flex;
+  font-size: 28px;
+  padding: 0.5rem;
+}
+
+.feedbackTotal {
+  composes: feedbackListItem;
+  color: #26ae61;
+  font-weight: 600;
+}
+.feedbackPositive {
+  composes: feedbackListItem;
+  color: #ff9732;
+  font-weight: 600;
+}

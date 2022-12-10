@@ -1,0 +1,43 @@
+.wrapperBtn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .wrapperBtn {
+    flex-direction: column;
+  }
+}
+
+.feedbackBtn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #36a6de;
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  height: 48px;
+  min-width: 140px;
+  transition: transform 250ms linear, box-shadow 250ms linear;
+  cursor: pointer;
+  padding: 0 15px;
+}
+.feedbackBtn:hover,
+.feedbackBtn:focus {
+  background-color: #1777a8;
+  transform: translateY(-0.25rem);
+  box-shadow: 0rem 0.25rem 0.75rem rgb(30 34 40 / 15%);
+  transition: background-color 250ms linear, transform 250ms linear;
+}
+
+.feedbackBtn:active {
+  background-color: #1777a8;
+  transition: background-color 250ms linear;
+}
